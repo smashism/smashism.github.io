@@ -1,3 +1,4 @@
 name: Flex
 markdown: kramdown
-pygments: rouge
+pygments: 
+highlighter: rouge
