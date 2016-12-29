@@ -8,7 +8,7 @@ categories: posts
 
 ## introducing smashism.github.io
 
-Howdy, I've set up this space to post updates when I add or update one of my scripts. You can see my main Git account (here)[https://github.com/smashism].
+Howdy, I've set up this space to post updates when I add or update one of my scripts. You can see my main Git account [here](https://github.com/smashism).
 
 ## Flex theme
 
