@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Recreating the login keychain
-cover: cover.jpg
+cover: recreate-keychain-cover.jpg
 date:   2016-12-29
 categories: posts
 ---
