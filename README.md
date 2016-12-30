@@ -1,1 +1,1 @@
-[https://smashism.github.io](smashism.github.io)
+[smashism.github.io](https://smashism.github.io)
