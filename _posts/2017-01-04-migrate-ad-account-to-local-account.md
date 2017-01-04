@@ -12,7 +12,7 @@ So I made a [small update](https://github.com/smashism/casper-scripts/blob/maste
 
 My addition looks something like this:
 
-```
+```bash
 # Installing newest version of NoMAD
 echo "Installing NoMAD..."
 jamf policy -trigger update_nomad >/dev/null # the >/dev/null supresses output of the policy, just to keep things tidy
