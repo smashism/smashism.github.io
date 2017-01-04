@@ -42,6 +42,7 @@ else
 	echo "[ERROR] macOS $OS_MAJOR.$OS_MINOR is not supported."
 	exit 1004
 fi
-exit 0``
+exit 0
+```
 
 You'd want to change the custom trigger to install NoMAD to whatever you prefer.
