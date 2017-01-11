@@ -69,12 +69,7 @@ a:hover {
   line-height: 1.75em;
 }
 
-.posts img {
-  max-width: 724px;
-  width: 100%;
-}
-
-#posts img {
+.posts > p img {
   max-width: 724px;
   width: 100%;
 }
