@@ -43,11 +43,6 @@ a:hover {
   color: #555;
 }
 
-img {
-  max-width:724;
-  width:100%;
-}
-
 /*****************************************************************************/
 /*
 /* Home
@@ -75,6 +70,11 @@ img {
 }
 
 .posts img {
+  max-width: 724px;
+  width: 100%;
+}
+
+#posts img {
   max-width: 724px;
   width: 100%;
 }
