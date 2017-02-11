@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating a folder in a repo on Github.com
+title: Creating folders in repos on Github
 cover: cover.jpg
 date:   2017-02-11 11:40am
 categories: posts
@@ -13,4 +13,4 @@ Hey y'all, I made a really short&#47;quick video on how to create a folder withi
 
 If the above video doesn't appear, you can see it on [Vimeo here](https://vimeo.com/203605105).
 
-:sparkling_heart: Em
+💖 Em
