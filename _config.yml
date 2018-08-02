@@ -1,5 +1,4 @@
 name: Flex
 markdown: kramdown
-pygments: 
 highlighter: rouge
-gems: [jekyll-feed]
+plugins: [jekyll-feed]

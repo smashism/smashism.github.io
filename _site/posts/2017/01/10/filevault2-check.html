@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>SMASHISM - Checking and Enabling FileVault 2</title>
+      <meta name="viewport" content="width=device-width">
+
+      <!-- syntax highlighting CSS -->
+      <link rel="stylesheet" href="/css/syntax.css">
+
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="/css/main.css">
+
+      <!-- Responsive CSS -->
+      <link rel="stylesheet" href="/css/responsive.css">
+
+      <!-- Google Fonts -->
+      <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+      <link href='//fonts.googleapis.com/css?family=Raleway:300,400,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class="site">
+      <div class="sidebar" id="sidebar">
+        <div class="header">
+          <h1 class="title"><a href="/"><img id="logo" src="/images/logo.png" style="width:520px; max-width:128px;"></a></h1>
+          <span class="tagline">SMASHISM.GITHUB.IO</span>
+        </div>
+        <div class="posts">
+          <ul class="posts-list">
+            
+              <li class="post-link">
+                <a class="post-title" href="/posts/2018/07/25/github-topics.html">
+                  <span class="post-date">25 Jul 2018</span>
+                  Help other Mac admins find your scripts on GitHub with Topics
+                </a>
+              </li>
+            
+              <li class="post-link">
+                <a class="post-title" href="/posts/2017/02/11/making-repo-folders.html">
+                  <span class="post-date">11 Feb 2017</span>
+                  Creating folders in repos on Github
+                </a>
+              </li>
+            
+              <li class="post-link">
+                <a class="post-title" href="/posts/2017/01/18/current-apple-id.html">
+                  <span class="post-date">18 Jan 2017</span>
+                  Getting the logged-in Apple ID
+                </a>
+              </li>
+            
+              <li class="post-link">
+                <a class="post-title" href="/posts/2017/01/10/filevault2-check.html">
+                  <span class="post-date">10 Jan 2017</span>
+                  Checking and Enabling FileVault 2
+                </a>
+              </li>
+            
+              <li class="post-link">
+                <a class="post-title" href="/posts/2017/01/04/migrate-ad-account-to-local-account.html">
+                  <span class="post-date">04 Jan 2017</span>
+                  An Addition to Rich's Account Migration Script
+                </a>
+              </li>
+            
+              <li class="post-link">
+                <a class="post-title" href="/posts/2016/12/30/logo-check.html">
+                  <span class="post-date">30 Dec 2016</span>
+                  Logo Check
+                </a>
+              </li>
+            
+              <li class="post-link">
+                <a class="post-title" href="/posts/2016/12/29/recreate-keychain.html">
+                  <span class="post-date">29 Dec 2016</span>
+                  Recreating the login keychain
+                </a>
+              </li>
+            
+              <li class="post-link">
+                <a class="post-title" href="/posts/2016/12/29/hello-world.html">
+                  <span class="post-date">29 Dec 2016</span>
+                  hello world
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+        <div class="footer">
+          <span id="footer-links">
+            <a href="http://www.modtitan.com/p/about.html" class="footer-link" target="_blank">About</a> <span class="separator">&bull;</span>
+            <a href="https://www.twitter.com/emilyooo" class="footer-link" target="_blank">Twitter</a> <span class="separator">&bull;</span>
+            <a href="https://www.github.com/smashism" class="footer-link" target="_blank">GitHub</a> <span class="separator">&bull;</span>
+            <a href="http://www.modtitan.com" class="footer-link" target="_blank">Blog</a>
+          </span>
+        </div>
+      </div>
+
+        <div class="content" id="home">
+  <div id="sidebar-button">
+    <img src="/images/sidebar-button.png">
+  </div>
+  <div id="post-info">
+    <div id="cover-photo-container">
+      <img id="cover-photo" src="/images/cover.jpg" style="max-width:732px;">
+    </div>
+    <div id="info-container">
+      <h1 id="title">Checking and Enabling FileVault 2</h1>
+      <span id="date">10 Jan 2017</span>
+    </div>
+  </div>
+
+  <div class="post">
+    <p>I spent the better part of Monday trying to make a <a href="http://grahampugh.github.io/2017/01/08/better-application-to-run-shell-scripts-with-admin-rights.html">simple AppleScript application</a> that could act as an all-in-one Disk Encryption enabler/checker utility.</p>
+
+<p><img src="https://raw.githubusercontent.com/smashism/smashism.github.io/master/images/Screen%20Shot%202017-01-09%20at%202.58.57%20PM.png" alt="Disk Encryption" /></p>
+
+<p>All the AppleScript app does, really, is run a shell script nestled inside. The shell script spits out dialogs with <code class="highlighter-rouge">fdesetup status</code>, and if the status is something other than <code class="highlighter-rouge">FileVault is On.</code> it will run a custom trigger for the JSS to run and configure an institutional FileVault 2 policy.</p>
+
+<p>You can see the script <a href="https://github.com/smashism/casper-scripts/blob/master/policy_fv2check.sh">here</a>. Detailed blog post forthcoming.</p>
+
+  </div>
+  <div class="colophon">
+    <p>
+      <span id="pub-date">Published on 10 Jan 2017</span> <span class="separator">&bull;</span>
+      <span id="social">Find me on <a href="https://www.twitter.com/emilyooo" target="_blank">Twitter</a>!</span> <span class="separator">&bull;</span>
+      <span id="social">Leave me a <a href="https://www.paypal.me/modtitan" target="_blank">tip</a>!</span>
+    </p>
+  </div>
+</div>
+
+
+
+    </div>
+    <script src="/scripts/responsive.js" type="text/javascript"></script>
+  </body>
+</html>

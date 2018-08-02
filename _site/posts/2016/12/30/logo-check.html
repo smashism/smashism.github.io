@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>SMASHISM - Logo Check</title>
+      <meta name="viewport" content="width=device-width">
+
+      <!-- syntax highlighting CSS -->
+      <link rel="stylesheet" href="/css/syntax.css">
+
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="/css/main.css">
+
+      <!-- Responsive CSS -->
+      <link rel="stylesheet" href="/css/responsive.css">
+
+      <!-- Google Fonts -->
+      <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+      <link href='//fonts.googleapis.com/css?family=Raleway:300,400,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class="site">
+      <div class="sidebar" id="sidebar">
+        <div class="header">
+          <h1 class="title"><a href="/"><img id="logo" src="/images/logo.png" style="width:520px; max-width:128px;"></a></h1>
+          <span class="tagline">SMASHISM.GITHUB.IO</span>
+        </div>
+        <div class="posts">
+          <ul class="posts-list">
+            
+              <li class="post-link">
+                <a class="post-title" href="/posts/2018/07/25/github-topics.html">
+                  <span class="post-date">25 Jul 2018</span>
+                  Help other Mac admins find your scripts on GitHub with Topics
+                </a>
+              </li>
+            
+              <li class="post-link">
+                <a class="post-title" href="/posts/2017/02/11/making-repo-folders.html">
+                  <span class="post-date">11 Feb 2017</span>
+                  Creating folders in repos on Github
+                </a>
+              </li>
+            
+              <li class="post-link">
+                <a class="post-title" href="/posts/2017/01/18/current-apple-id.html">
+                  <span class="post-date">18 Jan 2017</span>
+                  Getting the logged-in Apple ID
+                </a>
+              </li>
+            
+              <li class="post-link">
+                <a class="post-title" href="/posts/2017/01/10/filevault2-check.html">
+                  <span class="post-date">10 Jan 2017</span>
+                  Checking and Enabling FileVault 2
+                </a>
+              </li>
+            
+              <li class="post-link">
+                <a class="post-title" href="/posts/2017/01/04/migrate-ad-account-to-local-account.html">
+                  <span class="post-date">04 Jan 2017</span>
+                  An Addition to Rich's Account Migration Script
+                </a>
+              </li>
+            
+              <li class="post-link">
+                <a class="post-title" href="/posts/2016/12/30/logo-check.html">
+                  <span class="post-date">30 Dec 2016</span>
+                  Logo Check
+                </a>
+              </li>
+            
+              <li class="post-link">
+                <a class="post-title" href="/posts/2016/12/29/recreate-keychain.html">
+                  <span class="post-date">29 Dec 2016</span>
+                  Recreating the login keychain
+                </a>
+              </li>
+            
+              <li class="post-link">
+                <a class="post-title" href="/posts/2016/12/29/hello-world.html">
+                  <span class="post-date">29 Dec 2016</span>
+                  hello world
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+        <div class="footer">
+          <span id="footer-links">
+            <a href="http://www.modtitan.com/p/about.html" class="footer-link" target="_blank">About</a> <span class="separator">&bull;</span>
+            <a href="https://www.twitter.com/emilyooo" class="footer-link" target="_blank">Twitter</a> <span class="separator">&bull;</span>
+            <a href="https://www.github.com/smashism" class="footer-link" target="_blank">GitHub</a> <span class="separator">&bull;</span>
+            <a href="http://www.modtitan.com" class="footer-link" target="_blank">Blog</a>
+          </span>
+        </div>
+      </div>
+
+        <div class="content" id="home">
+  <div id="sidebar-button">
+    <img src="/images/sidebar-button.png">
+  </div>
+  <div id="post-info">
+    <div id="cover-photo-container">
+      <img id="cover-photo" src="/images/cover.jpg" style="max-width:732px;">
+    </div>
+    <div id="info-container">
+      <h1 id="title">Logo Check</h1>
+      <span id="date">30 Dec 2016</span>
+    </div>
+  </div>
+
+  <div class="post">
+    <h2 id="checking-for-a-company-logo">Checking for a Company Logo</h2>
+
+<p>Hey y’all. I found myself using a company logo quite a bit in jamfHelper and AppleScript prompts during policies, so I though it would be handy to have a script with logic to check and see if an icon is present and installing on demand, rather than including a .pkg installer in every policy that requires it.</p>
+
+<p>It’s a relatively simple script, which you can see <a href="https://github.com/smashism/casper-scripts/blob/master/policy_CompanyLogo.sh">here</a>. Replace the <code class="highlighter-rouge">/path/to/CompanyLogo.icns</code> with wherever the logo is you want to check for. Echos are included so that the policy logs show if the icon needed to be installed or not. This script could be easily updated to check for all sorts of things and install other things as needed.</p>
+
+<p>In the JSS you need two policies:</p>
+
+<ol>
+  <li>
+    <p>Whatever policy you are running that includes a script with jamfHelper pop-ups, etc., with the policy_CompanyLogo.sh also included set to run <code class="highlighter-rouge">Before</code> other installers/scripts.</p>
+  </li>
+  <li>
+    <p>A second policy that runs on the custom trigger you specify in the policy_CompanyLogo.sh.</p>
+  </li>
+</ol>
+
+<p>I got the idea for this from both my <a href="https://github.com/smashism/casper-scripts/blob/master/update_nomad.sh">NoMAD update script</a> and Rich Trouton’s <a href="https://gist.github.com/rtrouton/8830790#file-gistfile1-sh">printer driver check script</a>.</p>
+
+<p>As always, test before deploying in production!</p>
+
+  </div>
+  <div class="colophon">
+    <p>
+      <span id="pub-date">Published on 30 Dec 2016</span> <span class="separator">&bull;</span>
+      <span id="social">Find me on <a href="https://www.twitter.com/emilyooo" target="_blank">Twitter</a>!</span> <span class="separator">&bull;</span>
+      <span id="social">Leave me a <a href="https://www.paypal.me/modtitan" target="_blank">tip</a>!</span>
+    </p>
+  </div>
+</div>
+
+
+
+    </div>
+    <script src="/scripts/responsive.js" type="text/javascript"></script>
+  </body>
+</html>
