@@ -10,11 +10,7 @@ At the last Austin Apple Admins meetup I gave a talk about building VMs designed
 
 I threw together a function that can be put into a bash profile that is used as an alias to quickly generate a serial number.
 
-```bash
-randomsn() {
-        python -c "import string; from random import randint, sample; print('VM' + ''.join(sample((string.ascii_lowercase + string.digits),10)))"
-        }
-```
+<script src="https://gist.github.com/smashism/8068e42ecd3d0374707f0bf583d3ea83.js"></script>
 
 Just throw that in your bash profile (which you can get to by typing `nano .bash_profile` (replace `nano` with your editor of choice) to add the above function as an alias to your profile. Open a new terminal window and you can simply type `randomsn` to have a well-formed serial number generated for you.
 
