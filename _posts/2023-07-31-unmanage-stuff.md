@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Unmanaged mobile devices &amp; computers in Jamf Pro
-cover: unmanaged.png
+title: Unmanage mobile devices &amp; computers in Jamf Pro
+cover: unmanage.png
 date:   2023-07-31 2:05pm
 categories: posts
 ---
