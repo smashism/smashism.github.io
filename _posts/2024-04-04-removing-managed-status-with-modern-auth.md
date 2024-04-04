@@ -2,7 +2,7 @@
 layout: post
 title: Programmatically unmanaging computers &amp; devices via Jamf Pro API using bearer-auth token authentication.
 cover: modern-unmanage.png
-date:   2024-04-05 11:05pm
+date:   2024-04-05 11:05am
 categories: posts
 ---
 
